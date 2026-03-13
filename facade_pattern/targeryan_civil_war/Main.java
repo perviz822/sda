@@ -4,11 +4,8 @@ public class Main {
 
     public  static void main (String [] args){
         //create rider
-        Rider aegon = new Rider("Aegon","Targeryan");
-        Dragon balerion = new Dragon(250,"Balerion",aegon);
-        balerion.supplyFood();
-        balerion.planFlightPath();
-        balerion.alertVillagers();
+      DragonFacade dragonFacade = new DragonFacade();
+      dragonFacade.initiateDragon("Aegon", "Targeryan","Balerion" , 250);
         
     }
     
